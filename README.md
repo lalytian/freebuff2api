@@ -601,10 +601,11 @@ Worker 已自动处理以上全部生命周期，无需手动干预。另：syst
 
 3. **本地浏览器 + page-assist 插件**：配合 [page-assist](https://github.com/n4ze3m/page-assist) 浏览器插件使用，体验流畅，欢迎尝试。
 
-## 🙏 感谢
+## 🙏 感谢与致敬
 
-感谢以下贡献者对本项目的支持与贡献（排名不分先后）：
+感谢开源社区先驱与以下贡献者对本生态的支持与灵感启发（排名不分先后）：
 
+- [@pingmike2](https://github.com/pingmike2)（提供了基础的逆向代理范本与模型同步设计）
 - [@yjzsg](https://github.com/yjzsg)
 - [@zipei-a](https://github.com/zipei-a)
 - [@hknerdr](https://github.com/hknerdr)
@@ -613,6 +614,7 @@ Worker 已自动处理以上全部生命周期，无需手动干预。另：syst
 
 本项目在开发过程中参考并学习了以下开源项目，特此感谢：
 
+- [pingmike2/freebuff2api-wokers](https://github.com/pingmike2/freebuff2api-wokers) —— 优秀的 Freebuff Workers 逆向代理架构与自动化模型同步方案，本项目在此基底上进行了免弹窗 OAuth 交互升级、服务端强制落盘持久化与多协议代理加固。
 - [freebuff2api](https://github.com/XxxXTeam/freebuff2api) —— freebuff 桌面版/API 协议逆向与代理的原始实现（AGPL-3.0），本项目在其基础上进行二次开发与优化，并沿用 AGPL-3.0 开源。
 - [freebuff](https://github.com/CodebuffAI/freebuff) —— freebuff 官方公开源码，本项目通过阅读其协议实现与更新日志进行学习研究。
 - [Argo-Nezha-Service-Container](https://github.com/fscarmen/Argo-Nezha-Service-Container) —— **容器引导器模式**（Dockerfile 只做引导，业务逻辑由远程脚本/代码驱动），本项目 Docker 部署方式借鉴了该设计，实现"改代码即更新、重启即生效"的轻量管理。
