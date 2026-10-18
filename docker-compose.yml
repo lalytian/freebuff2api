@@ -1,0 +1,21 @@
+services:
+  freebuff2api:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    container_name: freebuff2api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8787:8787"
+    labels:
+      coibox.role: "Freebuff (Codebuff) 转 OpenAI/Anthropic 兼容 API 网关与管理面板"
+      coibox.exposure: "public"
+      coibox.skill: "coibox-service-deployment"
+      coibox.docs: "wiki/raw/deployments/freebuff2api-部署记录.md"
+    environment:
+      - PORT=8787
+      - HOST=0.0.0.0
+      - FREEBUFF_DEBUG=false
+    volumes:
+      - ./credentials:/app/credentials
+      - ./src/server.js:/app/server.js:ro

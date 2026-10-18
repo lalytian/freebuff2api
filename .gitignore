@@ -1,0 +1,6 @@
+credentials/admin.json
+credentials/.initial_password
+credentials/*.bak*
+*.bak*
+.DS_Store
+node_modules
